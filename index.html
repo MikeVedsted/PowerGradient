@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Gradient Background Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Oswald&display=swap" rel="stylesheet">
+</head>	
+
+<body id="body">
+	<div class="nav">
+		<button id="linearBtn">Linear</button>
+		<button id="radialBtn">radial</button>
+		<button id="conicBtn">conic</button>
+	</div>
+
+	<h1 >Ultimate Gradient Generator</h1>
+	<p id="current"></p>
+
+	<div class="flex-container">
+		<div class="container">
+			<div id="linear">
+				
+				<div class="colors">
+
+					<div class="color-block">
+						<input type="color" value="#ff5447" class="color1">
+						<input type="range" min="0" max="100" value="0">
+					</div>
+
+					<div class="color-block">
+						<input type="color" value="#4f3dd9" class="color2">
+						<input type="range" min="0" max="100" value="0">
+						<div class="button-group">
+							<button><</button>
+							<button>+</button>
+							<button>></button>
+						</div>
+					</div>
+
+				</div>
+
+				<h3>Degrees:</h3>
+				<input id="degrees" type="range" min="0" max="360" value="0">
+			</div>
+			<div id="radial">
+				<h1>RADIAL</h1>
+			</div>
+			<div  id="conic">
+				<h1>CONIC</h1>
+			</div>	
+		</div>
+		<button id="randomBtn">Generate Random Gradient</button>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

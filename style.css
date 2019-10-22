@@ -1,0 +1,113 @@
+* {
+color: rgba(255, 255, 255, 0.5);
+font-family: 'Old Standard TT', serif;
+text-align: center;
+letter-spacing: .2em;
+}
+
+html {
+margin: 0px;
+height: 100%;
+}
+
+body {
+
+height: 100%;
+
+}
+
+
+h1 {
+font-family: 'Oswald', sans-serif;
+letter-spacing: .2em;
+font-size: 4em;
+line-height: 1.1;
+width: 100%;
+margin-bottom: 0;
+}
+
+.flex-container {
+margin: 0px;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.container {
+width: 90%;
+align-items: center;
+}
+
+.nav {
+background-color: rgba(255,255,255,0.3);  
+width: 100%;
+height: 30px;
+display: flex;
+}
+
+.colors {
+width: 100%;
+height: 50%;
+display: flex;
+}
+
+p {
+margin: 0;
+}
+
+.nav button {
+width: 33%; /*fallback for ie*/
+width: calc(100%/3);
+}
+
+button {
+background-color: rgba(255,255,255,0);  
+text-transform: uppercase;
+border: 2px solid rgba(255, 255,255,0.3);
+font-family: 'Oswald', sans-serif;
+}
+
+.color-block {
+width: 50%;
+height: 200px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.button-group {
+width: 30px;
+position: absolute;
+left: -15px;
+}
+
+.button-group button {
+width: 100%;
+}
+
+input{
+width: 90%;
+background-color: rgba(255,255,255,0);  
+border: none;
+margin: 0;
+padding: 0;
+}
+
+input[type="color"] {
+height: 80%;
+}
+
+#degrees {
+width: 100%;
+}
+
+#radial {
+display: none;
+}
+
+#conic {
+display: none;
+}
