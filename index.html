@@ -10,16 +10,19 @@
 
 <body id="body">
 	<div class="nav">
-		<button id="linearBtn">Linear</button>
-		<button id="radialBtn">radial</button>
-		<button id="conicBtn">conic</button>
+		<button class="hide" id="linearBtn">Linear</button>
+		<button class="hide" id="radialBtn">radial</button>
+		<button class="hide" id="conicBtn">conic</button>
+		<button id="viewBtn">Enjoy the view!</button>
+		<button class="hide" id="randomBtn">Generate Random Gradient</button>
 	</div>
 
-	<h1 >Ultimate Gradient Generator</h1>
-	<p id="current"></p>
+	<h1 class="hide">Ultimate Gradient Generator</h1>
+	<p class="hide" id="current"></p>
 
 	<div class="flex-container">
-		<div class="container">
+		<div class="container hide">
+
 			<div id="linear">
 				
 				<div class="colors">
@@ -44,14 +47,17 @@
 				<h3>Degrees:</h3>
 				<input id="degrees" type="range" min="0" max="360" value="0">
 			</div>
+
 			<div id="radial">
 				<h1>RADIAL</h1>
 			</div>
+
 			<div  id="conic">
 				<h1>CONIC</h1>
 			</div>	
+
 		</div>
-		<button id="randomBtn">Generate Random Gradient</button>
+
 	</div>
 
 	<script type="text/javascript" src="script.js"></script>

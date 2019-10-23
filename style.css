@@ -57,8 +57,7 @@ margin: 0;
 }
 
 .nav button {
-width: 33%; /*fallback for ie*/
-width: calc(100%/3);
+width: 20%;
 }
 
 button {

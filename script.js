@@ -14,6 +14,9 @@ let degrees = document.getElementById('degrees');
 let colors = document.querySelectorAll('input[type="color"]');
 let type = "linear"
 
+//various 
+const elements = Array.from(document.getElementsByClassName('hide'));
+
 setGradient(); // set initial gradient
 
 function menuClick(id) { // hide all options, show clicked
@@ -23,6 +26,13 @@ document.getElementById('conic').style.display = "none";
 document.getElementById(id).style.display = "block";
 type = id;
 setGradient();
+}
+
+function enjoyTheView (){ // hide everything but button, change text to go back or enjoy depending on context
+	elements.forEach(function(el) {
+		el.style.display === "none" ? el.style.display = "block" : el.style.display = "none";});
+	viewBtn.style.width === "100%" ? viewBtn.style.width = "20%" : viewBtn.style.width = "100%";
+	viewBtn.style.width === "100%" ? viewBtn.textContent = "Go back!" : viewBtn.textContent = "Enjoy the view"; 
 }
 
 function setGradient() { // Update gradient and css-string to current values
@@ -54,6 +64,7 @@ linearBtn.addEventListener("click", function(){menuClick("linear")});
 radialBtn.addEventListener("click", function(){menuClick("radial")});
 conicBtn.addEventListener("click", function(){menuClick("conic")});
 randomBtn.addEventListener("click", randomGradient);
+viewBtn.addEventListener("click", enjoyTheView);
 
 // inputs 
 degrees.addEventListener("input", setGradient);
